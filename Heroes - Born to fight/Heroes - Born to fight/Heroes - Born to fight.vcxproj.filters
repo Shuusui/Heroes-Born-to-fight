@@ -1,17 +1,122 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Quelldateien">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Headerdateien">
+    <Filter Include="MainframeHeader">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Ressourcendateien">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="MainframeSource">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="BrainHeader">
+      <UniqueIdentifier>{a45c4e57-2ef9-4ccd-9d8a-12204e0af65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BrainSource">
+      <UniqueIdentifier>{6e59ab3a-c1ed-4608-850e-ebc6be447ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CombatHeader">
+      <UniqueIdentifier>{2ffeeb08-e8b3-4365-b150-9b4c75244cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CombatSource">
+      <UniqueIdentifier>{f8d693e4-35e0-4d5d-a718-d376374c1ee6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>MainframeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainMenu.cpp">
+      <Filter>MainframeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainGameLoop.cpp">
+      <Filter>MainframeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Options.cpp">
+      <Filter>MainframeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LoadGame.cpp">
+      <Filter>MainframeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>MainframeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventory.cpp">
+      <Filter>MainframeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Enemies.cpp">
+      <Filter>MainframeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseEnemyBrain.cpp">
+      <Filter>BrainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BossEnemyBrain.cpp">
+      <Filter>BrainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HighLevelBrain.cpp">
+      <Filter>BrainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CombatSystem.cpp">
+      <Filter>CombatSource</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\MainMenu.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\MainGameLoop.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Options.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\LoadGame.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Player.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\BasicEnums.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Inventory.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Item.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\BasicStructs.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Enemies.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Map.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\Tile.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\MageEnemy.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\BaseEnemyBrain.h">
+      <Filter>BrainHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\BossEnemyBrain.h">
+      <Filter>BrainHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\HighLevelBrain.h">
+      <Filter>BrainHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\FighterEnemy.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\HunterEnemy.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\CombatSystem.h">
+      <Filter>CombatHeader</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
