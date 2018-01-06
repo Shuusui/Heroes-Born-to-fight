@@ -5,6 +5,7 @@
 #include "BasicEnums.h"
 #include "BasicStructs.h"
 #include "Inventory.h"
+#include "Character.h"
 #pragma endregion 
 
 #pragma region External Includes
@@ -17,11 +18,11 @@ namespace Heroes
 {
 	namespace Mainframe
 	{
-		class Player
+		class Player : Character
 		{
 		public: 
 			Player(HeroClasses hero1); 
-			int GetCurrentLevel();
+			unsigned int GetCurrentLevel();
 			void AddExp(int experience);
 			void Attack(); 
 			void Defend(); 
@@ -35,6 +36,8 @@ namespace Heroes
 			bool AddMana(int manaValue);
 			bool AddHealth(int healthValue);
 			void CalculateExperienceToNextLevel();
+			void CalculateMaxHealth(); 
+			void CalculateMaxMana();
 			PlayerStats* m_stats;
 			Inventory* m_inv; 
 		};

@@ -165,6 +165,7 @@
     <ClInclude Include="src\include\BasicEnums.h" />
     <ClInclude Include="src\include\BasicStructs.h" />
     <ClInclude Include="src\include\BossEnemyBrain.h" />
+    <ClInclude Include="src\include\Character.h" />
     <ClInclude Include="src\include\CombatSystem.h" />
     <ClInclude Include="src\include\Enemies.h" />
     <ClInclude Include="src\include\FighterEnemy.h" />

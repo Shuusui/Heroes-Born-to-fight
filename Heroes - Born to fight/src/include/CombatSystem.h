@@ -19,6 +19,12 @@ namespace Heroes
 			CombatSystem(Heroes::Mainframe::Player* player, Heroes::Mainframe::Enemies* enemy);
 			~CombatSystem();
 		private: 
+			void GetFirstCharacter();
+
+
+			Heroes::Mainframe::Player* m_player; 
+			Heroes::Mainframe::Enemies* m_enemy; 
+
 		};
 	}
 }

@@ -27,7 +27,7 @@ Player::Player(HeroClasses hero1)
 	m_inv = new Inventory(m_stats->Strength);
 }
 
-int Player::GetCurrentLevel()
+unsigned int Player::GetCurrentLevel()
 {
 	return m_stats->Level;
 }
@@ -83,6 +83,7 @@ void Player::GetEffect(Item* item)
 		}
 	}
 }
+
 
 bool Player::AddMana(int manaValue)
 {
@@ -150,8 +151,19 @@ void Player::CalculateExperienceToNextLevel()
 
 }
 
+void Player::CalculateMaxHealth()
+{
+
+}
+
+void Player::CalculateMaxMana()
+{
+
+}
+
 Player::~Player()
 {
 	delete m_stats; 
 	delete m_inv; 
+	delete m_combatStats;
 }

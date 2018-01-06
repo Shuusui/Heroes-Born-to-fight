@@ -118,5 +118,8 @@
     <ClInclude Include="src\include\CombatSystem.h">
       <Filter>CombatHeader</Filter>
     </ClInclude>
+    <ClInclude Include="src\include\Character.h">
+      <Filter>MainframeHeader</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

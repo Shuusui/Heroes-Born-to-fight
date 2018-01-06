@@ -21,6 +21,9 @@ namespace Heroes
 			unsigned int Mana; 
 			unsigned int MaxMana; 
 			unsigned int Strength; 
+			unsigned int Agility;
+			unsigned int Constitution; 
+			unsigned int Intelligence; 
 			unsigned int CurrentExperience; 
 			unsigned int ExperienceToNextLevel;
 		};
@@ -31,6 +34,8 @@ namespace Heroes
 			float DamageReduction;
 			float BlockChance; 
 			float AttackSpeed; 
+			float Evasion;
+			float Awareness; 
 		};
 
 		struct Equipment
@@ -38,10 +43,9 @@ namespace Heroes
 			Weapon* Weapon;
 			Shield* Shield; 
 			Armor* Armor;
-			Spellbook* Spellbook; 
 			Other* OtherItems; 
 
-			~Equipment() { delete Weapon; delete Shield; delete Armor; delete Spellbook; delete OtherItems; }
+			~Equipment() { delete Weapon; delete Shield; delete Armor; delete OtherItems; }
 		};
 
 		struct EnemyStats
