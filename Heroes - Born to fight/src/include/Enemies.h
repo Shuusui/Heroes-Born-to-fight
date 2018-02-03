@@ -13,7 +13,7 @@ namespace Heroes
 {
 	namespace Mainframe
 	{
-		class Enemies : Character
+		class Enemies : public Character
 		{
 		public: 
 			Enemies(std::string name);

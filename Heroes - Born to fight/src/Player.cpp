@@ -4,6 +4,7 @@ using namespace Heroes::Mainframe;
 
 Player::Player(HeroClasses hero1)
 {
+	m_stats = new PlayerStats();
 	m_stats->Level = 0; 
 	m_stats->CurrentExperience = 0; 
 	switch (hero1)
@@ -25,7 +26,11 @@ Player::Player(HeroClasses hero1)
 		break;
 	}
 	m_inv = new Inventory(m_stats->Strength);
+
 }
+
+
+
 
 unsigned int Player::GetCurrentLevel()
 {
@@ -85,8 +90,9 @@ void Player::GetEffect(Item* item)
 }
 
 
-bool Player::AddMana(int manaValue)
+bool const Player::AddMana(int manaValue)
 {
+	manaValue += 10;
 	if (m_stats->Mana != m_stats->MaxMana)
 	{
 		m_stats->Mana += manaValue;
@@ -148,7 +154,7 @@ void Player::EquipGear()
 
 void Player::CalculateExperienceToNextLevel()
 {
-
+	
 }
 
 void Player::CalculateMaxHealth()
@@ -165,5 +171,4 @@ Player::~Player()
 {
 	delete m_stats; 
 	delete m_inv; 
-	delete m_combatStats;
 }

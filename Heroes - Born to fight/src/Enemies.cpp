@@ -12,5 +12,4 @@ Enemies::Enemies(std::string name)
 Enemies::~Enemies()
 {
 	delete m_stats; 
-	delete m_equip; 
 }
